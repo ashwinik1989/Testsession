@@ -11,7 +11,7 @@ export default class SyncQuote extends LightningElement {
     @track opportunityName = ''; 
     @track isQuoteAlreadySynced = false;
     @track syncMessage = ''; // Message to display in the modal
-
+    @track syncMessage2 = '';
     connectedCallback() {
         this.checkIfQuoteIsSynced(); // Check if the quote is already synced when the component is loaded
     }
